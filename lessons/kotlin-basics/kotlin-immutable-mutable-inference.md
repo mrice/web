@@ -21,9 +21,9 @@ In this brief lesson, you're going to get a feel for why Kotlin is so different 
 
 Let's start with an immutable variable with an implied type -- the clearest distinction from Java. There are two awesome things to explore about this one, first example. First, you'll notice that the variable starts with the word ```val```, not a variable data type like you find in Java. The ```val``` keyword tells the Kotlin compiler that the data stored in the variable be reassigned.
 
-```kotlin
+{% highlight kotlin %}
 val immutableVariableWithImpliedType = 1
-```
+{% endhighlight %}
 
 Immutability has become an important concept lately because we've learned, as an industry, that mutability in high performance, multithreaded applications creates situations where it's easy to introduce bugs, bugs that are very hard to debug. Kotlin has it baked right in, so this code won't compile:
 
